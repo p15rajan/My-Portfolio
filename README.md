@@ -1,0 +1,2 @@
+GIS professional with over 14 years of experience in enterprise IT, now advancing into the geospatial domain. Currently pursuing my M.Tech in Geoinformatics at the University of Madras, I specialize in spatial analysis, remote sensing, and data-driven decision-making. My expertise spans ArcGIS Pro, QGIS, FME, PostGIS, and Python, enabling me to bridge traditional IT infrastructure with modern geospatial technologies to deliver innovative solutions.
+
