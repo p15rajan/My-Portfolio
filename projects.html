@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects · Packiarajan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="page-shell">
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="avatar">P</div>
+        <div>
+          <div class="hero-name">Packiarajan Sivasubramanian</div>
+          <div class="hero-role">GIS Professional &amp; Geoinformatics Researcher</div>
+          <div class="hero-meta">
+            <span><i class="fas fa-map-pin"></i> Chennai, India</span>
+            <a href="mailto:p15rajan@gmail.com"><i class="fas fa-envelope"></i> p15rajan@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="#" onclick="window.print();return false;" class="btn btn-ghost"><i class="fas fa-print"></i> Print</a>
+        <a href="#" class="btn btn-primary" id="downloadBtn"><i class="fas fa-file-arrow-down"></i> Download Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-wrap">
+    <nav>
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="about.html"><i class="fas fa-user"></i> About</a>
+      <a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a>
+      <a href="skills.html"><i class="fas fa-cogs"></i> Skills</a>
+      <a href="projects.html" class="active"><i class="fas fa-globe"></i> Projects</a>
+      <a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a>
+      <a href="certifications.html"><i class="fas fa-certificate"></i> Certifications</a>
+      <a href="contact.html"><i class="fas fa-paper-plane"></i> Contact</a>
+    </nav>
+  </div>
+
+  <!-- ══ PROJECT TABS ══ -->
+  <div class="section-header">
+    <i class="fas fa-folder-open"></i>
+    <h2>Projects</h2>
+  </div>
+
+  <!-- Tab Buttons -->
+  <div class="proj-tabs">
+    <button id="tab-gis" class="proj-tab active" onclick="switchTab('gis')">
+      <i class="fas fa-globe-asia"></i> GIS Projects
+    </button>
+    <button id="tab-ds" class="proj-tab" onclick="switchTab('ds')">
+      <i class="fas fa-brain"></i> Data Science Projects
+    </button>
+  </div>
+
+  <!-- ══ GIS PROJECTS PANEL ══ -->
+  <div id="panel-gis">
+    <div class="card-grid">
+
+      <!-- WebGIS — FEATURED (full width) -->
+      <div class="project-card" style="grid-column:1/-1;border:1.5px solid rgba(249,115,22,0.35);background:linear-gradient(135deg,#fff7ed 0%,#ffffff 60%);">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.8rem;flex-wrap:wrap;gap:0.5rem;">
+          <div style="display:flex;align-items:center;gap:0.5rem;">
+            <span class="badge" style="background:linear-gradient(135deg,#f97316,#ea580c);color:white;border:none;">⭐ Featured · WebGIS</span>
+            <span class="badge green">Wildlife Conservation</span>
+          </div>
+          <span style="font-size:0.78rem;color:var(--text-muted);"><i class="far fa-calendar-alt"></i> 2025 – 2026</span>
+        </div>
+        <h3 style="font-family:'Sora',sans-serif;font-size:1.1rem;font-weight:700;color:var(--text-primary);margin-bottom:0.6rem;">
+          <i class="fas fa-map-location-dot" style="color:var(--orange);"></i>
+          WebGIS — Sathyamangalam Tiger Reserve: Animal &amp; Plant Inventory
+        </h3>
+        <p style="font-size:0.88rem;color:var(--text-body);line-height:1.7;margin-bottom:1.1rem;">
+          Developed a full-stack interactive WebGIS application for the
+          <strong>Sathyamangalam Tiger Reserve (STR), Tamil Nadu</strong> — one of India's critical
+          tiger corridors spanning ~1,411 km² across the Nilgiri Biosphere Reserve.
+          The platform enables forest rangers, ecologists, and researchers to
+          <strong>digitally record, query, and visualize geo-tagged wildlife sightings</strong>
+          and flora distribution across reserve zones in real time.
+        </p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.8rem;margin-bottom:1.1rem;">
+          <div style="background:rgba(249,115,22,0.06);border:1px solid rgba(249,115,22,0.15);border-radius:10px;padding:0.85rem 1rem;">
+            <div style="font-size:0.78rem;font-weight:700;color:var(--orange-dark);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.4rem;"><i class="fas fa-paw"></i> Animal Inventory</div>
+            <p style="font-size:0.82rem;color:var(--text-body);line-height:1.5;">Geo-tagged sighting records for tigers, leopards, elephants, gaur, sloth bears, and 200+ bird species with GPS coordinates, date, zone, and observer notes.</p>
+          </div>
+          <div style="background:rgba(249,115,22,0.06);border:1px solid rgba(249,115,22,0.15);border-radius:10px;padding:0.85rem 1rem;">
+            <div style="font-size:0.78rem;font-weight:700;color:var(--orange-dark);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.4rem;"><i class="fas fa-seedling"></i> Plant Inventory</div>
+            <p style="font-size:0.82rem;color:var(--text-body);line-height:1.5;">Spatial distribution of endemic and endangered flora — teak, rosewood, sandalwood, medicinal plants — mapped with density and conservation status attributes.</p>
+          </div>
+          <div style="background:rgba(249,115,22,0.06);border:1px solid rgba(249,115,22,0.15);border-radius:10px;padding:0.85rem 1rem;">
+            <div style="font-size:0.78rem;font-weight:700;color:var(--orange-dark);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.4rem;"><i class="fas fa-layer-group"></i> Map Layers</div>
+            <p style="font-size:0.82rem;color:var(--text-body);line-height:1.5;">Reserve boundary, buffer zones, beat/range divisions, water bodies, forest type (LULC), roads, patrol routes — served as WMS/WFS via GeoServer.</p>
+          </div>
+          <div style="background:rgba(249,115,22,0.06);border:1px solid rgba(249,115,22,0.15);border-radius:10px;padding:0.85rem 1rem;">
+            <div style="font-size:0.78rem;font-weight:700;color:var(--orange-dark);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.4rem;"><i class="fas fa-magnifying-glass-location"></i> Query &amp; Filter</div>
+            <p style="font-size:0.82rem;color:var(--text-body);line-height:1.5;">Attribute &amp; spatial queries via PostGIS — filter by species, date range, zone, or draw a bounding box on the Leaflet map to fetch records from the database.</p>
+          </div>
+        </div>
+        <div style="background:var(--char-dark);border-radius:10px;padding:0.9rem 1.2rem;margin-bottom:1.1rem;display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap;">
+          <span style="font-size:0.75rem;font-weight:600;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.05em;margin-right:0.3rem;">Stack</span>
+          <span style="font-size:0.8rem;color:#fb923c;font-weight:500;">HTML5 / CSS3</span>
+          <span style="color:rgba(255,255,255,0.2);font-size:0.7rem;">▸</span>
+          <span style="font-size:0.8rem;color:#fb923c;font-weight:500;">Leaflet.js</span>
+          <span style="color:rgba(255,255,255,0.2);font-size:0.7rem;">▸</span>
+          <span style="font-size:0.8rem;color:#fb923c;font-weight:500;">GeoServer 2.28.4</span>
+          <span style="color:rgba(255,255,255,0.2);font-size:0.7rem;">▸</span>
+          <span style="font-size:0.8rem;color:#fb923c;font-weight:500;">PostgreSQL 18.4 + PostGIS</span>
+          <span style="color:rgba(255,255,255,0.2);font-size:0.7rem;">▸</span>
+          <span style="font-size:0.8rem;color:#fb923c;font-weight:500;">WMS / WFS</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
+          <span class="skill-tag primary" style="font-size:0.75rem;">Leaflet.js</span>
+          <span class="skill-tag primary" style="font-size:0.75rem;">GeoServer 2.28.4</span>
+          <span class="skill-tag primary" style="font-size:0.75rem;">PostgreSQL 18.4</span>
+          <span class="skill-tag primary" style="font-size:0.75rem;">PostGIS</span>
+          <span class="skill-tag" style="font-size:0.75rem;">HTML5 / CSS3</span>
+          <span class="skill-tag" style="font-size:0.75rem;">WMS / WFS</span>
+          <span class="skill-tag" style="font-size:0.75rem;">Spatial SQL</span>
+          <span class="skill-tag" style="font-size:0.75rem;">LULC</span>
+          <span class="skill-tag" style="font-size:0.75rem;">Wildlife Conservation</span>
+        </div>
+      </div>
+
+      <!-- Global Warming -->
+      <div class="project-card">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.6rem;">
+          <span class="badge amber">Climate Analysis</span>
+          <span style="font-size:0.78rem;color:var(--text-muted);"><i class="far fa-calendar-alt"></i> 2023</span>
+        </div>
+        <h3 style="font-family:'Sora',sans-serif;font-size:1rem;font-weight:600;color:var(--text-primary);margin-bottom:0.5rem;">
+          <i class="fas fa-temperature-high" style="color:var(--orange);"></i> Global Warming Impact Assessment
+        </h3>
+        <p style="font-size:0.85rem;color:var(--text-body);line-height:1.6;margin-bottom:1rem;">
+          Performed comprehensive spatial analysis — Buffer, Overlay, and LULC classification — to quantify land-use change over time. Generated thematic heat maps and geospatial visualizations to illustrate climate change impacts.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
+          <span class="skill-tag" style="font-size:0.75rem;">ArcGIS Pro</span>
+          <span class="skill-tag" style="font-size:0.75rem;">QGIS</span>
+          <span class="skill-tag" style="font-size:0.75rem;">Buffer Analysis</span>
+          <span class="skill-tag" style="font-size:0.75rem;">LULC</span>
+        </div>
+      </div>
+
+      <!-- Flood Risk -->
+      <div class="project-card">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.6rem;">
+          <span class="badge">Disaster Management</span>
+          <span style="font-size:0.78rem;color:var(--text-muted);"><i class="far fa-calendar-alt"></i> 2025</span>
+        </div>
+        <h3 style="font-family:'Sora',sans-serif;font-size:1rem;font-weight:600;color:var(--text-primary);margin-bottom:0.5rem;">
+          <i class="fas fa-water" style="color:var(--orange);"></i> Flood Risk Zonation — Cuddalore District
+        </h3>
+        <p style="font-size:0.85rem;color:var(--text-body);line-height:1.6;margin-bottom:1rem;">
+          Delineated flood-risk zones by integrating multi-criteria spatial datasets — DEM (SRTM/ASTER), LULC classification, soil permeability, slope, and historical rainfall records. Applied Weighted Overlay Analysis to generate a flood susceptibility index.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
+          <span class="skill-tag" style="font-size:0.75rem;">ArcGIS Pro</span>
+          <span class="skill-tag" style="font-size:0.75rem;">Python</span>
+          <span class="skill-tag" style="font-size:0.75rem;">DEM Analysis</span>
+          <span class="skill-tag" style="font-size:0.75rem;">Weighted Overlay</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══ DATA SCIENCE PROJECTS PANEL ══ -->
+  <div id="panel-ds" style="display:none;">
+    <div class="card-grid">
+
+      <!-- Customer Churn -->
+      <div class="project-card">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.6rem;">
+          <span class="badge green">Machine Learning</span>
+          <span style="font-size:0.78rem;color:var(--text-muted);"><i class="far fa-calendar-alt"></i> 2024</span>
+        </div>
+        <h3 style="font-family:'Sora',sans-serif;font-size:1rem;font-weight:600;color:var(--text-primary);margin-bottom:0.5rem;">
+          <i class="fas fa-chart-line" style="color:var(--orange);"></i> Customer Churn Prediction
+        </h3>
+        <p style="font-size:0.85rem;color:var(--text-body);line-height:1.6;margin-bottom:1rem;">
+          Built binary classification models (Logistic Regression) achieving <strong>81% accuracy</strong> and 0.85 F1-score on large customer datasets. Conducted EDA and feature engineering — skills directly applicable to geospatial datasets.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
+          <span class="skill-tag" style="font-size:0.75rem;">Python</span>
+          <span class="skill-tag" style="font-size:0.75rem;">Scikit-learn</span>
+          <span class="skill-tag" style="font-size:0.75rem;">Logistic Regression</span>
+          <span class="skill-tag" style="font-size:0.75rem;">EDA</span>
+        </div>
+      </div>
+
+      <!-- Traffic Signal CNN -->
+      <div class="project-card">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.6rem;">
+          <span class="badge amber">Computer Vision</span>
+          <span style="font-size:0.78rem;color:var(--text-muted);"><i class="far fa-calendar-alt"></i> 2023</span>
+        </div>
+        <h3 style="font-family:'Sora',sans-serif;font-size:1rem;font-weight:600;color:var(--text-primary);margin-bottom:0.5rem;">
+          <i class="fas fa-traffic-light" style="color:var(--orange);"></i> Traffic Signal Detection using CNN
+        </h3>
+        <p style="font-size:0.85rem;color:var(--text-body);line-height:1.6;margin-bottom:1rem;">
+          Designed a CNN-based model for real-world traffic signal detection — relevant to smart-city GIS and transportation analysis applications. Evaluated model performance using precision, recall, and cross-validation metrics.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
+          <span class="skill-tag" style="font-size:0.75rem;">TensorFlow</span>
+          <span class="skill-tag" style="font-size:0.75rem;">Keras</span>
+          <span class="skill-tag" style="font-size:0.75rem;">CNN</span>
+          <span class="skill-tag" style="font-size:0.75rem;">Smart City GIS</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <span>© 2026 Packiarajan Sivasubramanian · GIS Portfolio</span>
+    <div class="social-links">
+      <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+</div>
+<script>
+  // ── Download Resume ──
+  document.getElementById("downloadBtn").addEventListener("click", function(e){
+    e.preventDefault();
+    var a = document.createElement("a");
+    a.href = "Packiarajan_GIS_Resume.pdf";
+    a.download = "Packiarajan_GIS_Resume.pdf";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  });
+
+  // ── Tab Switcher ──
+  function switchTab(which) {
+    var gisPanel  = document.getElementById("panel-gis");
+    var dsPanel   = document.getElementById("panel-ds");
+    var gisBtn    = document.getElementById("tab-gis");
+    var dsBtn     = document.getElementById("tab-ds");
+
+    if (which === "ds") {
+      gisPanel.style.cssText = "display:none !important";
+      dsPanel.style.cssText  = "display:block !important";
+      gisBtn.style.background = "white";
+      gisBtn.style.color      = "#64748b";
+      gisBtn.style.boxShadow  = "none";
+      gisBtn.style.border     = "1.5px solid rgba(249,115,22,0.3)";
+      dsBtn.style.background  = "linear-gradient(135deg,#f97316,#ea580c)";
+      dsBtn.style.color       = "white";
+      dsBtn.style.boxShadow   = "0 3px 14px rgba(249,115,22,0.4)";
+      dsBtn.style.border      = "1.5px solid transparent";
+    } else {
+      gisPanel.style.cssText = "display:block !important";
+      dsPanel.style.cssText  = "display:none !important";
+      dsBtn.style.background  = "white";
+      dsBtn.style.color       = "#64748b";
+      dsBtn.style.boxShadow   = "none";
+      dsBtn.style.border      = "1.5px solid rgba(249,115,22,0.3)";
+      gisBtn.style.background = "linear-gradient(135deg,#f97316,#ea580c)";
+      gisBtn.style.color      = "white";
+      gisBtn.style.boxShadow  = "0 3px 14px rgba(249,115,22,0.4)";
+      gisBtn.style.border     = "1.5px solid transparent";
+    }
+  }
+
+  document.getElementById("tab-gis").addEventListener("click", function(){ switchTab("gis"); });
+  document.getElementById("tab-ds").addEventListener("click",  function(){ switchTab("ds");  });
+
+  // Deep-link: projects.html#ds → open Data Science tab
+  var hash = (window.location.hash || "").replace("#","");
+  switchTab(hash === "ds" ? "ds" : "gis");
+</script>
+</body>
+</html>
