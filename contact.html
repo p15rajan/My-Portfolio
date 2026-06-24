@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact · Packiarajan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="page-shell">
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="avatar">P</div>
+        <div>
+          <div class="hero-name">Packiarajan Sivasubramanian</div>
+          <div class="hero-role">GIS Professional &amp; Geoinformatics Researcher</div>
+          <div class="hero-meta">
+            <span><i class="fas fa-map-pin"></i> Chennai, India</span>
+            <a href="mailto:p15rajan@gmail.com"><i class="fas fa-envelope"></i> p15rajan@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="#" onclick="window.print();return false;" class="btn btn-ghost"><i class="fas fa-print"></i> Print</a>
+        <a href="#" class="btn btn-primary" id="downloadBtn"><i class="fas fa-file-arrow-down"></i> Download Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-wrap">
+    <nav>
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="about.html"><i class="fas fa-user"></i> About</a>
+      <a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a>
+      <a href="skills.html"><i class="fas fa-cogs"></i> Skills</a>
+      <a href="projects.html"><i class="fas fa-globe"></i> Projects</a>
+      <a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a>
+      <a href="certifications.html"><i class="fas fa-certificate"></i> Certifications</a>
+      <a href="contact.html" class="active"><i class="fas fa-paper-plane"></i> Contact</a>
+    </nav>
+  </div>
+
+  <div class="section-header">
+    <i class="fas fa-paper-plane"></i>
+    <h2>Get in Touch</h2>
+  </div>
+
+  <div class="card" style="max-width:560px;">
+    <h3 style="margin-bottom:1rem;"><i class="fas fa-address-card"></i> Contact Information</h3>
+
+    <div class="contact-info-item">
+      <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+      <div>
+        <strong>Email</strong>
+        <a href="mailto:p15rajan@gmail.com">p15rajan@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="contact-info-item">
+      <div class="contact-icon"><i class="fas fa-phone"></i></div>
+      <div>
+        <strong>Phone</strong>
+        <a href="tel:+919886027591">+91 98860 27591</a>
+      </div>
+    </div>
+
+    <div class="contact-info-item">
+      <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+      <div>
+        <strong>Location</strong>
+        <span>Chennai, Tamil Nadu, India</span>
+      </div>
+    </div>
+
+    <div class="contact-info-item">
+      <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+      <div>
+        <strong>LinkedIn</strong>
+        <a href="https://www.linkedin.com/in/packiarajan-siva/" target="_blank">
+      https://www.linkedin.com/in/packiarajan-siva/</a>
+      </div>
+    </div>
+
+    <div class="contact-info-item">
+      <div class="contact-icon"><i class="fab fa-github"></i></div>
+      <div>
+        <strong>GitHub</strong>
+        <a href="https://github.com/p15rajan/" target="_blank"> https://github.com/p15rajan </a>
+      </div>
+    </div>
+
+    <!-- Availability badge -->
+    <div style="margin-top:1.2rem;background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.2);border-radius:var(--radius-sm);padding:0.8rem 1rem;display:flex;align-items:center;gap:0.6rem;">
+      <span style="width:8px;height:8px;border-radius:50%;background:#10b981;flex-shrink:0;box-shadow:0 0 0 3px rgba(16,185,129,0.25);"></span>
+      <span style="font-size:0.82rem;color:#065f46;font-weight:500;">Open to GIS internship opportunities</span>
+    </div>
+  </div>
+
+  <footer>
+    <span>© 2026 Packiarajan Sivasubramanian · GIS Portfolio</span>
+    <div class="social-links">
+      <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+</div>
+<script>
+(function(){
+  document.getElementById("downloadBtn").addEventListener("click", function(e){
+    e.preventDefault();
+    var a = document.createElement("a");
+    a.href = "Packiarajan_GIS_Resume.pdf";
+    a.download = "Packiarajan_GIS_Resume.pdf";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  });
+})();
+</script>
+</body>
+</html>
